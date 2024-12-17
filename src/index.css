@@ -1,0 +1,84 @@
+/* CSS for the Employee Management Form */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 450px; /* Increased for larger forms */
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  font-size: 24px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #0f0c0c;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px; /* Uniform padding for all inputs */
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 6px; /* Rounded edges */
+  font-size: 15px; /* Slightly larger text for readability */
+  box-sizing: border-box; /* Ensures consistent sizing */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #0056b3; /* Focus border color */
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 86, 179, 0.5); /* Subtle focus shadow */
+}
+
+button {
+  background-color: #08844e;
+  color: #ffffff;
+  border: none;
+  padding: 12px; /* Increased padding for better usability */
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 13px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
